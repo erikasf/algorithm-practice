@@ -1,0 +1,8 @@
+//gets substring of the string, if you put single number it returns from the number to the end. so it substring that many characters from end str.length as the length of the target. and check if that the same as the target.
+function end(str, target) {
+
+   return str.substring(str.length-target.length) == target;
+};
+     
+  
+
