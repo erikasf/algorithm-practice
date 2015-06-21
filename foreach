@@ -1,0 +1,87 @@
+For each video, add a projected {id, title} pair to the videoAndTitlePairs array.
+
+
+1
+function() {
+2
+  var newReleases = [
+3
+      {
+4
+        "id": 70111470,
+5
+        "title": "Die Hard",
+6
+        "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+7
+        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+8
+        "rating": [4.0],
+9
+        "bookmark": []
+10
+      },
+11
+      {
+12
+        "id": 654356453,
+13
+        "title": "Bad Boys",
+14
+        "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+15
+        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+16
+        "rating": [5.0],
+17
+        "bookmark": [{ id:432534, time:65876586 }]
+18
+      },
+19
+      {
+20
+        "id": 65432445,
+21
+        "title": "The Chamber",
+22
+        "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+23
+        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+24
+        "rating": [4.0],
+25
+        "bookmark": []
+26
+      },
+27
+      {
+28
+        "id": 675465,
+29
+        "title": "Fracture",
+30
+        "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+31
+        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+32
+        "rating": [5.0],
+33
+        "bookmark": [{ id:432534, time:65876586 }]
+34
+      }
+35
+    ],
+
+    videoAndTitlePairs = [];
+37
+  newReleases.forEach(function(video) {
+38
+    videoAndTitlePairs.push({id:video.id, title: video.title});
+39
+  });
+
+  return videoAndTitlePairs;
+42
+}
+43
+​
